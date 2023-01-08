@@ -17,6 +17,7 @@ export class AppController {
   @ApiBody({ type: RegisterModel })
   @Post()
   register(@Body() dto: RegisterModel) {
-    return dto;
+    console.log(dto);
+    return 'Success';
   }
 }
